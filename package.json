@@ -1,0 +1,24 @@
+{
+  "name": "ing_web_development",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mya02-maker/music-Testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mya02-maker/music-Testing/issues"
+  },
+  "homepage": "https://github.com/mya02-maker/music-Testing#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
