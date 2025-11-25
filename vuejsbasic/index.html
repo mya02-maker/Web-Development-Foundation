@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue.js</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- <style>
+        .box{
+            background-color: brown;
+            padding: 50px;
+            margin: 30px;
+            display: inline-block;
+            color: whitesmoke;
+        }
+    </style> -->
+
+</head>
+<body>
+    <div id="app">
+        
+        <div v-for="book in books" v-if="isshow" :class="{'fav': book.isFav}">
+      <h3>Book name : {{book.name}}</h3>
+      <p>Author : {{book.author}}</p>
+      <p>Author Age : {{book.age}}</p>
+    </div>
+
+    <button @click="toggleShow">
+      <span v-if="isshow">Hide Book</span>
+      <span v-if="!isshow">Show Book</span>
+    </button>
+
+
+
+        <!-- <h3>{{name}}</h3>
+        <p>{{author}}</p>
+        <p>{{age}}</p> -->
+
+        <!-- <button v-on:click="age++">increaseage</button> <br>
+        <button v-on:click="ChangeAuthor">changeauthorname</button> -->
+
+        <!-- <div class="box" @mouseover="mouseoverhandler" >Box1</div>
+        <div class="box" @mouseleave="mouseleavehandler">Box2</div>
+        <div class="box" @dblclick="doubleclickhandler"   >Box3</div> -->
+
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
